@@ -4,7 +4,6 @@ package com.lianglu.weyue.event;
 import com.lianglu.weyue.db.entity.CollBookBean;
 
 /**
- * Created by LiangLu on 17-12-27.
  */
 
 public class DeleteResponseEvent {
