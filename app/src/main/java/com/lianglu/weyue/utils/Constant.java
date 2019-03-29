@@ -16,7 +16,7 @@ public class Constant {
     static {
         if (BuildConfig.DEBUG) {
 //            BASE_URL = "http://192.168.1.121:3389";
-            BASE_URL = "http://192.168.5.87:3389";
+            BASE_URL = "http://www.luliangdev.cn";
         } else {
             BASE_URL = "http://www.luliangdev.cn";
         }

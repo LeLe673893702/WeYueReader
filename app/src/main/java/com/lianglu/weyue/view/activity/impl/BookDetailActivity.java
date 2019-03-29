@@ -3,6 +3,7 @@ package com.lianglu.weyue.view.activity.impl;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatImageView;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +30,6 @@ import com.lianglu.weyue.widget.theme.ColorTextView;
 import com.zhy.view.flowlayout.FlowLayout;
 import com.zhy.view.flowlayout.TagAdapter;
 import com.zhy.view.flowlayout.TagFlowLayout;
-
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -78,6 +78,10 @@ public class BookDetailActivity extends BaseActivity implements IBookDetail {
     TextView mTvRead;
     @BindView(R.id.rl_rootview)
     RelativeLayout rl_rootview;
+    @BindView(R.id.iv_toolbar_comment)
+    AppCompatImageView mIvToolbarComment;
+    @BindView(R.id.ll_book_copyright)
+    LinearLayout mLlBookCopyright;
     private CollBookBean mCollBookBean;
     private BookBean mBookBean;
     private VMBookDetailInfo mModel;
@@ -97,7 +101,7 @@ public class BookDetailActivity extends BaseActivity implements IBookDetail {
         initThemeToolBar(mBookBean.getTitle());
 
         Glide.with(mContext).load(Constant.ZHUISHU_IMAGE_URL + mBookBean.getCover())
-               /* .placeholder(R.mipmap.ic_book_loading).transform(new GlideRoundTransform(mContext))*/
+                /* .placeholder(R.mipmap.ic_book_loading).transform(new GlideRoundTransform(mContext))*/
                 .into(mIvBookImage);
 
         mTvBookName.setText(mBookBean.getTitle());

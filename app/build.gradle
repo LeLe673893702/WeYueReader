@@ -175,5 +175,10 @@ dependencies {
      * floatingactionbutton MD悬浮按钮菜单版
      */
     implementation "com.getbase:floatingactionbutton:${libs.floatingactionbutton}"
-
+    implementation 'cn.bmob.android:bmob-sdk:3.7.2'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.2"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.squareup.okio:okio:2.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
 }
